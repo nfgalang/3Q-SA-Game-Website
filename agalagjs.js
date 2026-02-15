@@ -87,7 +87,7 @@ function enmyMvmntJs() {
       clearInterval(qc);
       enmyMvmntJs();
     } else {
-    if (psx &lt; randx){
+    if (psx < randx){
       psx++; 
     } else {
       psx--;
@@ -106,7 +106,7 @@ function enmyMvmntJsB() {
       clearInterval(qcB);
       enmyMvmntJsB();
     } else {
-    if (psxB &lt; randxB){
+    if (psxB < randxB){
       psxB++; 
     } else {
       psxB--;
@@ -125,7 +125,7 @@ function enmyMvmntJsC() {
       clearInterval(qcC);
       enmyMvmntJsC();
     } else {
-    if (psxC &lt; randxC){
+    if (psxC < randxC){
       psxC++; 
     } else {
       psxC--;
@@ -144,7 +144,7 @@ function enmyMvmntJsD() {
       clearInterval(qcD);
       enmyMvmntJsD();
     } else {
-    if (psxD &lt; randxD){
+    if (psxD < randxD){
       psxD++; 
     } else {
       psxD--;
@@ -163,7 +163,7 @@ function enmyMvmntJs2() {
       clearInterval(qc2);
       enmyMvmntJs2();
     } else {
-    if (psx2 &lt; randx2){
+    if (psx2 < randx2){
       psx2++; 
     } else {
       psx2--;
@@ -182,7 +182,7 @@ function enmyMvmntJs2B() {
       clearInterval(qc2B);
       enmyMvmntJs2B();
     } else {
-    if (psx2B &lt; randx2B){
+    if (psx2B < randx2B){
       psx2B++; 
     } else {
       psx2B--;
@@ -201,7 +201,7 @@ function enmyMvmntJs2C() {
       clearInterval(qc2C);
       enmyMvmntJs2C();
     } else {
-    if (psx2C &lt; randx2C){
+    if (psx2C < randx2C){
       psx2C++; 
     } else {
       psx2C--;
@@ -220,7 +220,7 @@ function enmyMvmntJs3() {
       clearInterval(qc3);
       enmyMvmntJs3();
     } else {
-    if (psx3 &lt; randx3){
+    if (psx3 < randx3){
       psx3++; 
     } else {
       psx3--;
@@ -239,7 +239,7 @@ function enmyMvmntJs3B() {
       clearInterval(qc3B);
       enmyMvmntJs3B();
     } else {
-    if (psx3B &lt; randx3B){
+    if (psx3B < randx3B){
       psx3B++; 
     } else {
       psx3B--;
@@ -258,7 +258,7 @@ function enmyMvmntJs3C() {
       clearInterval(qc3C);
       enmyMvmntJs3C();
     } else {
-    if (psx3C &lt; randx3C){
+    if (psx3C < randx3C){
       psx3C++; 
     } else {
       psx3C--;
@@ -409,7 +409,7 @@ let qcb = null;
 function tch(bllttch,enmytch){
   const eps1 = bllttch.getBoundingClientRect();
   const eps2 = enmytch.getBoundingClientRect();
-  return !(eps1.right &lt; eps2.left || eps1.left > eps2.right || eps1.bottom &lt; eps2.top || eps1.top > eps2.bottom);
+  return !(eps1.right < eps2.left || eps1.left > eps2.right || eps1.bottom < eps2.top || eps1.top > eps2.bottom);
 }
 function sht(event) {
   let bllt = document.getElementById("mysht"); 
